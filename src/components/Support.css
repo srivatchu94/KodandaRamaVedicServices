@@ -1,0 +1,118 @@
+.support__layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.support__faqs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.support__item {
+  background: var(--white);
+  border: 1px solid var(--cream-200);
+  border-radius: var(--radius);
+  padding: 4px 24px;
+  transition: border-color 0.15s ease;
+}
+
+.support__item.is-open {
+  border-color: var(--saffron-400);
+}
+
+.support__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 0;
+  border: none;
+  background: transparent;
+  text-align: left;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--navy-900);
+  cursor: pointer;
+}
+
+.support__question-icon {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--saffron-100);
+  color: var(--saffron-600);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.support__answer {
+  padding: 0 0 22px;
+  color: var(--ink-500);
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.support__help {
+  position: sticky;
+  top: 104px;
+  background: linear-gradient(160deg, var(--navy-950), var(--navy-800));
+  border-radius: var(--radius-lg);
+  padding: 36px 32px;
+  box-shadow: var(--shadow-md);
+}
+
+.support__help h3 {
+  color: var(--white);
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+}
+
+.support__help p {
+  color: rgba(250, 248, 243, 0.72);
+  font-size: 0.92rem;
+  margin-bottom: 24px;
+}
+
+.support__help-link {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--saffron-400);
+}
+
+.support__help-link:hover {
+  text-decoration: underline;
+}
+
+.support__help-phone {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: rgba(250, 248, 243, 0.6);
+}
+
+.support__help-phone:hover {
+  color: var(--saffron-400);
+}
+
+@media (max-width: 860px) {
+  .support__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .support__help {
+    position: static;
+  }
+}

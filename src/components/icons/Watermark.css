@@ -1,0 +1,22 @@
+.page-watermark {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.page-watermark__svg {
+  width: min(90vw, 820px);
+  height: min(90vw, 820px);
+  opacity: 0.05;
+}
+
+@media (max-width: 640px) {
+  .page-watermark__svg {
+    opacity: 0.045;
+  }
+}
