@@ -31,7 +31,7 @@ To change wording, add/remove a pooja, or update contact details, edit that file
 ### Things to update before going live
 
 - **Social links** in `content.js` (`socialLinks`) currently point to generic Facebook/Instagram/YouTube homepages as placeholders — replace with the real profile URLs.
-- **WhatsApp / phone** numbers are wired to `+91 96294 76225` — update in `content.js` if this changes.
+- **WhatsApp / phone** numbers are wired to `+91 96294 76265` — update in `content.js` if this changes.
 
 ## Booking form → email notifications
 

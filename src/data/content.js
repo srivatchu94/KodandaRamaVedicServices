@@ -11,9 +11,9 @@ export const siteInfo = {
 export const priest = {
   name: 'S. Kasthuriranga Bhattachariar',
   role: 'Vedic Priest',
-  phone: '+91 96294 76225',
-  phoneHref: 'tel:+919629476225',
-  whatsappHref: 'https://wa.me/919629476225',
+  phone: '+91 96294 76265',
+  phoneHref: 'tel:+919629476265',
+  whatsappHref: 'https://wa.me/919629476265',
   availability: 'Available for Services Across the Region',
   serving: 'Serving Sanatana Dharma with Dedication and Devotion',
 }
@@ -25,8 +25,12 @@ export const services = [
   'Ayushya Homam',
   'Dhanvanthri Homam',
   'Sudarshana Homam',
+  'Mrityunjaya Homam',
+  'Chandi Homam',
+  'Navagraha Homam',
   'Gruhapravesam (House Warming Ceremony)',
   'Lakshmi Kubera Pooja',
+  'Lakshmi Kubera Homam',
   'Navagraha Pooja',
   'Vastu Pooja',
   'Seemantham',
@@ -72,7 +76,7 @@ export const faqs = [
 ]
 
 export const socialLinks = [
-  { label: 'WhatsApp', href: 'https://wa.me/919629476225', icon: 'whatsapp' },
+  { label: 'WhatsApp', href: 'https://wa.me/919629476265', icon: 'whatsapp' },
   { label: 'Facebook', href: 'https://www.facebook.com/', icon: 'facebook' },
   { label: 'Instagram', href: 'https://www.instagram.com/', icon: 'instagram' },
   { label: 'YouTube', href: 'https://www.youtube.com/', icon: 'youtube' },
