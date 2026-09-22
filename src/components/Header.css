@@ -62,12 +62,12 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background: var(--navy-900);
-  color: var(--saffron-400);
-  font-size: 1.2rem;
+  box-shadow: 0 0 0 2px rgba(226, 147, 46, 0.45), var(--shadow-sm);
+  flex-shrink: 0;
 }
 
 .site-header__brand-text {

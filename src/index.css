@@ -122,6 +122,18 @@ button {
   background: var(--saffron-500);
 }
 
+.brand-seal {
+  overflow: hidden;
+}
+
+.brand-seal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 42%;
+  display: block;
+}
+
 .section {
   padding: 96px 0;
 }

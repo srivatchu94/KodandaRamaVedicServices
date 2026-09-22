@@ -1,9 +1,13 @@
 import { priest, siteInfo } from '../data/content'
+import brandSeal from '../assets/brand-seal.png'
+import coverBanner from '../assets/cover-banner.png'
 import './Hero.css'
 
 function Hero({ onBook }) {
   return (
     <section id="home" className="hero">
+      <img src={coverBanner} alt="" aria-hidden="true" className="hero__bg-image" />
+      <div className="hero__bg-scrim" aria-hidden="true" />
       <div className="hero__glow" aria-hidden="true" />
       <div className="container hero__inner">
         <div className="hero__content">
@@ -36,7 +40,9 @@ function Hero({ onBook }) {
 
         <div className="hero__card">
           <div className="hero__card-glow" aria-hidden="true" />
-          <span className="hero__card-mark">ॐ</span>
+          <span className="hero__card-mark brand-seal">
+            <img src={brandSeal} alt="Sri Kodanda Rama Vedic Services seal" />
+          </span>
           <p className="hero__card-banner">{siteInfo.banner}</p>
           <div className="hero__card-rule" />
           <p className="hero__card-priest">{priest.name}</p>

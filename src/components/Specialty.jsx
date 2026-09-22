@@ -1,4 +1,5 @@
 import { siteInfo, specialties } from '../data/content'
+import brandSeal from '../assets/brand-seal.png'
 import './Specialty.css'
 
 function Specialty() {
@@ -21,7 +22,9 @@ function Specialty() {
         </div>
 
         <div className="specialty__card">
-          <span className="specialty__card-mark">ॐ</span>
+          <span className="specialty__card-mark brand-seal">
+            <img src={brandSeal} alt="Sri Kodanda Rama Vedic Services seal" />
+          </span>
           <p className="specialty__card-quote">{siteInfo.closingLine}</p>
           <div className="specialty__card-rule" />
           <p className="specialty__card-sub">Serving Sanatana Dharma with dedication and devotion</p>

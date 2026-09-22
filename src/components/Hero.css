@@ -1,8 +1,32 @@
 .hero {
   position: relative;
-  background: linear-gradient(160deg, var(--navy-950), var(--navy-900) 55%, var(--navy-800));
+  background: var(--navy-950);
   overflow: hidden;
   padding: 64px 0 88px;
+}
+
+.hero__bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 90% 46%;
+  opacity: 0.75;
+  z-index: 0;
+}
+
+.hero__bg-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    var(--navy-950) 0%,
+    var(--navy-950) 55%,
+    rgba(10, 28, 41, 0.55) 74%,
+    rgba(10, 28, 41, 0.15) 100%
+  );
+  z-index: 1;
 }
 
 .hero__glow {
@@ -13,11 +37,12 @@
   height: 640px;
   background: radial-gradient(circle, rgba(226, 147, 46, 0.28), transparent 70%);
   pointer-events: none;
+  z-index: 1;
 }
 
 .hero__inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
   gap: 56px;
@@ -98,11 +123,11 @@ a.hero__meta-item--phone:hover {
 
 .hero__card {
   position: relative;
-  background: rgba(250, 248, 243, 0.06);
-  border: 1px solid rgba(250, 248, 243, 0.14);
+  background: rgba(10, 28, 41, 0.55);
+  border: 1px solid rgba(250, 248, 243, 0.18);
   border-radius: var(--radius-lg);
   padding: 40px 34px;
-  backdrop-filter: blur(6px);
+  backdrop-filter: blur(8px);
   overflow: hidden;
 }
 
@@ -120,13 +145,12 @@ a.hero__meta-item--phone:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   background: var(--saffron-500);
-  color: var(--navy-950);
-  font-size: 1.5rem;
-  margin-bottom: 24px;
+  box-shadow: 0 0 0 5px rgba(226, 147, 46, 0.22);
+  margin-bottom: 26px;
 }
 
 .hero__card-banner {

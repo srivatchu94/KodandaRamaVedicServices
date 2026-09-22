@@ -1,4 +1,5 @@
 import { credit, priest, siteInfo, socialLinks } from '../data/content'
+import brandSeal from '../assets/brand-seal.png'
 import './Footer.css'
 
 const NAV_LINKS = [
@@ -17,7 +18,10 @@ function Footer() {
       <div className="container site-footer__inner">
         <div className="site-footer__col">
           <a href="#home" className="site-footer__brand">
-            <span aria-hidden="true">ॐ</span> {siteInfo.name}
+            <span className="site-footer__brand-mark brand-seal">
+              <img src={brandSeal} alt="" aria-hidden="true" />
+            </span>
+            {siteInfo.name}
           </a>
           <p>{siteInfo.tagline}</p>
           <div className="site-footer__social">

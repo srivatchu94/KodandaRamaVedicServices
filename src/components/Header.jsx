@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import emblemBanner from '../assets/vaishnava-emblem.png'
+import brandSeal from '../assets/brand-seal.png'
 import { siteInfo } from '../data/content'
 import './Header.css'
 
@@ -47,7 +48,9 @@ function Header({ onBook }) {
       <header className={`site-header ${scrolled ? 'site-header--scrolled' : ''}`}>
         <div className="container site-header__inner">
           <a href="#home" className="site-header__brand" onClick={closeMenu}>
-            <span className="site-header__brand-mark">ॐ</span>
+            <span className="site-header__brand-mark brand-seal">
+              <img src={brandSeal} alt="Sri Kodanda Rama Vedic Services seal" />
+            </span>
             <span className="site-header__brand-text">
               <strong>Sri Kodanda Rama</strong>
               <small>Vedic Services</small>
